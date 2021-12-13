@@ -13,11 +13,9 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: cypress-screenshots
-          path: |
-            e2e/cypress/screenshots/*
+          path: ${{ github.workspace }}/e2e/cypress/screenshots/*
       - name: Archive Cypress Videos
         uses: actions/upload-artifact@v2
         with:
           name: cypress-videos
-          path: |
-            e2e/cypress/videos/*
+          path: ${{ github.workspace }}/e2e/cypress/videos/*
