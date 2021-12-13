@@ -9,7 +9,7 @@ describe('StartTest', () => {
     });
     it('should display text WORLD when click', () => {
         cy.get('#do').click();
-        cy.contains('WORLD', { timeout: 1000 });
+        cy.contains('WORLD', { timeout: 8000 });
     });
 });
 
